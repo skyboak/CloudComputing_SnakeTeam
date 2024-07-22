@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Stats</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="button-container">
+        <a href="index.html" class="nav-button" id="btnIndex">JSON Upload</a>
+        <a href="glossary.html" class="nav-button" id="btnGlossary">Glossary</a>
+        <a href="TeamGraph.html" class="nav-button" id="btnTeamGraph">Team Stats</a>
+        <a href="notifications.html" class="nav-button" id="btnNotifications">Notifications</a>
+    </div>
+    <div class="container">
+        <h1>Team Stats</h1>
+        <div class="chart-container">
+            <canvas id="totalActionsChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="actionDistributionChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="actionsPerDayChart"></canvas>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
